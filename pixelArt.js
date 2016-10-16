@@ -25,6 +25,7 @@ for (var x = 0; x < colArr.length; x++) {
   palette[0].appendChild(palCreate);
   palCreate.addEventListener("click", function() {
     paletteStore[0].style.backgroundColor = event.target.style.backgroundColor;
+    currentColor.style.backgroundColor = event.target.style.backgroundColor;
   });
 };
 
@@ -48,14 +49,17 @@ for (var i = 0; i < 3569; i++) {
 var currentColTXT = document.createElement("p");
 currentColTXT.innerText = 'CURRENT COLOR > ';
 currentColTXT.style.fontSize = '150%';
-currentColTXT.style.marginLeft = '20px';
-currentColTXT.style.alignSelf = 'flex-start';
+currentColTXT.style.marginLeft = '30px';
+currentColTXT.style.marginTop = '20px';
+currentColTXT.style.color = "#595959";
 palette[0].appendChild(currentColTXT);
 
 //create a div & house current color pic:
 
 var currentColor = document.createElement("div");
 currentColor.style.height = "43px";
-currentColor.style.width = "100px";
+currentColor.style.width = "200px";
+currentColor.style.marginLeft = "30px";
+currentColor.style.marginTop = "11px";
 currentColor.style.backgroundColor = "white";
 palette[0].appendChild(currentColor);

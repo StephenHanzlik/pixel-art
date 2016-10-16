@@ -23,10 +23,11 @@
 }
 .palette{
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 52px;
   /*border:1px solid black;*/
   clear: both;
   display: flex;
   flex-wrap: wrap;
   height: 160px;
+  width: 90%;
 }
