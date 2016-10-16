@@ -33,12 +33,12 @@ palette2[0].addEventListener("click", function() {
 //create and append divs to fill out pix canvas:
 
 
-for (var i = 0; i < 2800; i++) {
+for (var i = 0; i < 2808; i++) {
  var canvas = document.getElementsByClassName("canvas");
  var pixCreate = document.createElement("div");
  pixCreate.style.backgroundColor = 'yellow';
- pixCreate.style.height = '40px';
- pixCreate.style.width = '40px';
+ pixCreate.style.height = '42px';
+ pixCreate.style.width = '42px';
  pixCreate.style.border = '1px solid black';
  console.log('canvas: ' + canvas);
  canvas[0].appendChild(pixCreate);
