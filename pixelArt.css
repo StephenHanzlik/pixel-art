@@ -3,6 +3,7 @@
   width: 1250px;
   height: 1250px;
   border: 1px solid black;
+  display: flex;
 }
 
 .celltop{
@@ -43,5 +44,4 @@ background-color: white;
 .palette{
 border:1px solid black;
 clear: both;
-display: flex;
 }
