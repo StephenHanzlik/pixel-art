@@ -1,43 +1,42 @@
 "use strict";
 
-//click to change the color of squares to red:
-
-var pix = document.getElementsByClassName("celltop");
-pix[0].addEventListener("click", function() {
-  pix[0].style.backgroundColor = "red";
-});
-pix[1].addEventListener("click", function() {
-  pix[1].style.backgroundColor = "red";
-});
-var pix1 = document.getElementsByClassName("cellbottomL");
-pix1[0].addEventListener("click", function() {
-  pix1[0].style.backgroundColor = "red";
-});
-var pix2 = document.getElementsByClassName("cellbottomR");
-pix2[0].addEventListener("click", function() {
-  pix2[0].style.backgroundColor = "red";
-});
-
 //click palette to store color:
 
 var paletteStore = document.getElementsByClassName("paletteStore");
 
 var palette1 = document.getElementsByClassName("palcolorAquamarine");
 palette1[0].addEventListener("click", function() {
-  paletteStore[0].style.backgroundColor = 'Aquamarine';
+  paletteStore[0].style.backgroundColor = 'aquamarine';
 });
-var palette2 = document.getElementsByClassName("palcolorblue");
+var palette2 = document.getElementsByClassName("palcolorDarkGoldenRod");
 palette2[0].addEventListener("click", function() {
-  paletteStore[0].style.backgroundColor = 'blue';
+  paletteStore[0].style.backgroundColor = 'darkgoldenrod';
 });
-var palette3 = document.getElementsByClassName("palcolorred");
+var palette3 = document.getElementsByClassName("palcolorDarkOliveGreen");
 palette3[0].addEventListener("click", function() {
-  paletteStore[0].style.backgroundColor = 'red';
+  paletteStore[0].style.backgroundColor = 'darkolivegreen';
 });
-var palette4 = document.getElementsByClassName("palcoloryellow");
+var palette4 = document.getElementsByClassName("palcolorDarkSalmon");
 palette4[0].addEventListener("click", function() {
-  paletteStore[0].style.backgroundColor = 'yellow';
+  paletteStore[0].style.backgroundColor = 'darksalmon';
 });
+
+// Loop through array of colors and create a palatte:
+
+var colArr = ['goldenrod', 'dimgray', 'darkslateblue', 'darkseagreen', 'indigo', 'lavender', 'khaki'];
+
+for (var x = 0; x < colArr.length; x++) {
+  var palette = document.getElementsByClassName("palette");
+  var palCreate = document.createElement("div");
+  palCreate.style.backgroundColor = colArr[x];
+  palCreate.style.height = '50px';
+  palCreate.style.width = '50px';
+  palCreate.style.border = '1px solid grey';
+  palette[0].appendChild(palCreate);
+  palCreate.addEventListener("click", function() {
+    paletteStore[0].style.backgroundColor = event.target.style.backgroundColor;
+  });
+};
 
 //create and append divs to fill out pix canvas:
 
