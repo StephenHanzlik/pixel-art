@@ -21,13 +21,22 @@ pix2[0].addEventListener("click", function() {
 //click palette to store color:
 
 var paletteStore = document.getElementsByClassName("paletteStore");
-var palette1 = document.getElementsByClassName("palcolorgreen");
+
+var palette1 = document.getElementsByClassName("palcolorAquamarine");
 palette1[0].addEventListener("click", function() {
-  paletteStore[0].style.backgroundColor = 'green';
+  paletteStore[0].style.backgroundColor = 'Aquamarine';
 });
 var palette2 = document.getElementsByClassName("palcolorblue");
 palette2[0].addEventListener("click", function() {
   paletteStore[0].style.backgroundColor = 'blue';
+});
+var palette3 = document.getElementsByClassName("palcolorred");
+palette3[0].addEventListener("click", function() {
+  paletteStore[0].style.backgroundColor = 'red';
+});
+var palette4 = document.getElementsByClassName("palcoloryellow");
+palette4[0].addEventListener("click", function() {
+  paletteStore[0].style.backgroundColor = 'yellow';
 });
 
 //create and append divs to fill out pix canvas:
@@ -36,10 +45,10 @@ palette2[0].addEventListener("click", function() {
 for (var i = 0; i < 2808; i++) {
  var canvas = document.getElementsByClassName("canvas");
  var pixCreate = document.createElement("div");
- pixCreate.style.backgroundColor = 'yellow';
+ pixCreate.style.backgroundColor = 'white';
  pixCreate.style.height = '42px';
  pixCreate.style.width = '42px';
- pixCreate.style.border = '1px solid black';
+ pixCreate.style.border = '1px solid grey';
  canvas[0].appendChild(pixCreate);
  pixCreate.addEventListener("click", function(){
    event.target.style.backgroundColor = paletteStore[0].style.backgroundColor;
