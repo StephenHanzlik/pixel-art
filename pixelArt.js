@@ -34,9 +34,12 @@ palette2[0].addEventListener("click", function() {
 
 
 for (var i = 0; i < 28; i++) {
+ var canvas = document.getElementsByClassName("canvas");
  var pixCreate = document.createElement("div");
- pixCreate.style.backgroundColor = 'brown';
+ pixCreate.style.backgroundColor = 'yellow';
  pixCreate.style.height = '50px';
  pixCreate.style.width = '50px';
- document.body.appendChild(pixCreate)
+ pixCreate.style.border = '1px solid black';
+ console.log('canvas: ' + canvas);
+ canvas[0].appendChild(pixCreate);
 }
