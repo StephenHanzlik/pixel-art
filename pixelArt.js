@@ -28,14 +28,14 @@ for (var x = 0; x < colArr.length; x++) {
   });
 };
 
-//create and append divs to fill out canvas:
+//create and append divs to fill out canvas: 4422
 
-for (var i = 0; i < 4422; i++) {
+for (var i = 0; i < 3569; i++) {
  var canvas = document.getElementsByClassName("canvas");
  var pixCreate = document.createElement("div");
  pixCreate.style.backgroundColor = 'white';
- pixCreate.style.height = '1.3%';
- pixCreate.style.width = '1.3%';
+ pixCreate.style.height = '2%';
+ pixCreate.style.width = '1%';
  pixCreate.style.border = '1px solid #e0e0e0';
  canvas[0].appendChild(pixCreate);
  pixCreate.addEventListener("click", function(){
