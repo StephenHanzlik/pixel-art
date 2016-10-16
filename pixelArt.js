@@ -41,10 +41,7 @@ for (var i = 0; i < 2808; i++) {
  pixCreate.style.width = '42px';
  pixCreate.style.border = '1px solid black';
  canvas[0].appendChild(pixCreate);
+ pixCreate.addEventListener("click", function(){
+   event.target.style.backgroundColor = paletteStore[0].style.backgroundColor;
+ });
 }
-
-//add event listener to target of click to paint palette colors:
-
-pixCreate.addEventListener("click", function(){
-  this.style.backgroundColor =  paletteStore[0].style.backgroundColor;
-})
