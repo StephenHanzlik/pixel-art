@@ -23,7 +23,7 @@ var paletteStore = document.getElementsByClassName("paletteStore");
 
 // Loop through array of colors and create a palatte:
 var colArr = ['#f44842', '#db4b27', '#db6927', '#db7e27', '#db9f27', '#dbb127', '#dbc027', '#dbd227', '#cfdb27', '#abdb27', '#84db27', '#54db27', '#27db30', '#27db75', '#27db90', '#27dbcf', '#27c0db', '#275adb', '#272adb', '#6c27db', '#8727db', '#9927db', '#bd27db', '#db27db', '#db27b1','#840976', '#840959', '#600722', '#2b020e', '#070001', '#ffffff'];
-// var colArr = ['goldenrod', 'dimgray', 'darkslateblue', 'darkseagreen', 'indigo', 'lavender', 'khaki','darksalmon', 'darkolivegreen', 'darkgoldenrod', 'aquamarine'];
+
 
 for (var x = 0; x < colArr.length; x++) {
   var palette = document.getElementsByClassName("palette");
@@ -31,7 +31,7 @@ for (var x = 0; x < colArr.length; x++) {
   palCreate.style.backgroundColor = colArr[x];
   palCreate.style.height = '50px';
   palCreate.style.width = '50px';
-  palCreate.style.border = '1px solid grey';
+  palCreate.style.border = '1px solid lightgrey';
   palette[0].appendChild(palCreate);
   palCreate.addEventListener("click", function() {
     paletteStore[0].style.backgroundColor = event.target.style.backgroundColor;
