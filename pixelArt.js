@@ -31,13 +31,12 @@ palette2[0].addEventListener("click", function() {
 });
 
 //create and append divs to fill out pix canvas:
-var canvas = document.getElementsByClassName("canvas");
+
 
 for (var i = 0; i < 28; i++) {
  var pixCreate = document.createElement("div");
  pixCreate.style.backgroundColor = 'brown';
  pixCreate.style.height = '50px';
  pixCreate.style.width = '50px';
- document.body.appendChild(canvas);
+ document.body.appendChild(pixCreate)
 }
-// document.body.appendChild(pixCreate);
