@@ -9,9 +9,9 @@ paletteStore[0].style.backgroundColor = 'white';
 
 var colArr = ['#f44842', '#db4b27', '#db6927', '#db7e27', '#db9f27', '#dbb127', '#dbc027', '#dbd227', '#cfdb27', '#abdb27', '#84db27', '#54db27', '#27db30', '#27db75', '#27db90', '#27dbcf', '#27c0db', '#275adb', '#272adb', '#6c27db', '#8727db', '#9927db', '#bd27db', '#db27db', '#db27b1','#840976', '#840959', '#600722', '#2b020e', '#070001', '#ffffff'];
 
+var palette = document.getElementsByClassName("palette");
 
 for (var x = 0; x < colArr.length; x++) {
-  var palette = document.getElementsByClassName("palette");
   var palCreate = document.createElement("div");
   palCreate.style.backgroundColor = colArr[x];
   palCreate.style.height = '100px';
@@ -42,4 +42,12 @@ for (var i = 0; i < 2808; i++) {
  });
 }
 
-//add text to pallette:
+//append 'current color' text to pallette:
+
+var currentCol = document.createElement("p");
+currentCol.innerText = 'current color > ';
+currentCol.style.fontSize = '500%';
+currentCol.style.paddingBottom = '500px';
+palette[0].appendChild(currentCol);
+
+//create a div & house current color pic: 
