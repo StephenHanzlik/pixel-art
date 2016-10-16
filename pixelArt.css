@@ -1,3 +1,6 @@
+.masterCont {
+  background-color: #a9a9aa;
+}
 .canvas {
   display: block;
   width: 3500px;
@@ -6,15 +9,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto 0px auto;
 }
 .palette{
-margin-top: 80px;
-/*border:1px solid black;*/
-clear: both;
-display: flex;
-height: 200px;
+  margin-top: 80px;
+    /*border:1px solid black;*/
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  height: 350px;
 }
 .roundedEdgeCont {
   border: 1px solid black;
@@ -22,27 +25,3 @@ height: 200px;
   border-radius: 3.5%;
   margin: 50px 100px 50px 100px;
 }
-/*.palcolorAquamarine{
-  width:50px;
-  height: 50px;
-  border:1px solid black;
-  background-color: aquamarine;
-}
-.palcolorDarkGoldenRod{
-  width:50px;
-  height: 50px;
-  border:1px solid black;
-  background-color: darkgoldenrod;
-}
-.palcolorDarkOliveGreen{
-  width:50px;
-  height: 50px;
-  border:1px solid black;
-  background-color: darkolivegreen;
-}
-.palcolorDarkSalmon{
-  width:50px;
-  height: 50px;
-  border:1px solid black;
-  background-color: darksalmon;
-}*/
