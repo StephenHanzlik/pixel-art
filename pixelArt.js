@@ -14,11 +14,11 @@ var palette = document.getElementsByClassName("palette");
 for (var x = 0; x < colArr.length; x++) {
   var palCreate = document.createElement("div");
   palCreate.style.backgroundColor = colArr[x];
-  palCreate.style.height = '100px';
-  palCreate.style.width = '100px';
-  palCreate.style.padding = '20px';
-  palCreate.style.marginLeft = '40px';
-  palCreate.style.marginTop = '20px';
+  palCreate.style.height = '15%';
+  palCreate.style.width = '2.5%';
+  palCreate.style.padding = '1%';
+  // palCreate.style.marginLeft = '40px';
+  // palCreate.style.marginTop = '20px';
   palCreate.style.borderRadius = '50%';
   palCreate.style.border = '1px solid #e0e0e0';
   palette[0].appendChild(palCreate);

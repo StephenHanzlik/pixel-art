@@ -1,5 +1,6 @@
 .masterCont {
   background-color: #a9a9aa;
+  margin: -10px -10px -10px -10px;
 }
 .canvas {
   display: block;
@@ -12,16 +13,16 @@
   margin: 50px auto 0px auto;
 }
 .palette{
-  margin-top: 80px;
-    /*border:1px solid black;*/
+  margin-top: 20px;
+  border:1px solid black;
   clear: both;
   display: flex;
   flex-wrap: wrap;
-  height: 350px;
+  height: 160px;
 }
 .roundedEdgeCont {
   border: 1px solid black;
   background-color: lightgrey;
   border-radius: 3.5%;
-  margin: 50px 100px 50px 100px;
+  margin: 0px 100px 50px 100px;
 }
