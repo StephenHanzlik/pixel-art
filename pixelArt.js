@@ -44,10 +44,16 @@ for (var i = 0; i < 2808; i++) {
 
 //append 'current color' text to pallette:
 
-var currentCol = document.createElement("p");
-currentCol.innerText = 'current color > ';
-currentCol.style.fontSize = '500%';
-currentCol.style.paddingBottom = '500px';
-palette[0].appendChild(currentCol);
+var currentColTXT = document.createElement("p");
+currentColTXT.innerText = 'current color > ';
+currentColTXT.style.fontSize = '500%';
+currentColTXT.style.paddingBottom = '500px';
+palette[0].appendChild(currentColTXT);
 
-//create a div & house current color pic: 
+//create a div & house current color pic:
+
+var currentColor = document.createElement("div");
+currentColor.style.height = "43px";
+currentColor.style.width = "100px";
+currentColor.style.backgroundColor = "white"; 
+palette[0].appendChild(currentColor);
