@@ -27,14 +27,14 @@ for (var x = 0; x < colArr.length; x++) {
   });
 };
 
-//create and append divs to fill out pix canvas:
-
-for (var i = 0; i < 2808; i++) {
+//create and append divs to fill out canvas:
+//i < 2808  &&  height 42px
+for (var i = 0; i < 4422; i++) {
  var canvas = document.getElementsByClassName("canvas");
  var pixCreate = document.createElement("div");
  pixCreate.style.backgroundColor = 'white';
- pixCreate.style.height = '42px';
- pixCreate.style.width = '42px';
+ pixCreate.style.height = '1.3%';
+ pixCreate.style.width = '1.3%';
  pixCreate.style.border = '1px solid #e0e0e0';
  canvas[0].appendChild(pixCreate);
  pixCreate.addEventListener("click", function(){
@@ -55,5 +55,5 @@ palette[0].appendChild(currentColTXT);
 var currentColor = document.createElement("div");
 currentColor.style.height = "43px";
 currentColor.style.width = "100px";
-currentColor.style.backgroundColor = "white"; 
+currentColor.style.backgroundColor = "white";
 palette[0].appendChild(currentColor);

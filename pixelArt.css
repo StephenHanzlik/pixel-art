@@ -3,8 +3,8 @@
 }
 .canvas {
   display: block;
-  width: 3500px;
-  height: 1800px;
+  width: 1000px;
+  height: 1000px;
   /*border: 1px solid black;*/
   display: flex;
   flex-wrap: wrap;
