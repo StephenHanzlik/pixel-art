@@ -29,8 +29,9 @@ for (var x = 0; x < colArr.length; x++) {
   var palette = document.getElementsByClassName("palette");
   var palCreate = document.createElement("div");
   palCreate.style.backgroundColor = colArr[x];
-  palCreate.style.height = '50px';
-  palCreate.style.width = '50px';
+  palCreate.style.height = '100px';
+  palCreate.style.width = '100px';
+  palCreate.style.borderRadius = '50%';
   palCreate.style.border = '1px solid lightgrey';
   palette[0].appendChild(palCreate);
   palCreate.addEventListener("click", function() {
